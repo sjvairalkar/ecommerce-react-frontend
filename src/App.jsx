@@ -1,9 +1,14 @@
 import React from 'react'
+import Navbar from './components/Navbar'
+import AppRoutes from './routes/AppRoutes'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
     <>
-      <h1>Multi-Category E-Commerce App</h1>
+      <Navbar/>
+      <AppRoutes/>
+      <Footer/>
     </>
   )
 }
