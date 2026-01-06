@@ -1,16 +1,16 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-    return (
-        <>
-            <nav style={{ padding: "10px", background: "#222" }}>
-                <Link to="/" style={{ color: "#fff", marginRight: "15px" }}>Home</Link>
-                <Link to="/login" style={{ color: "#fff", marginRight: "15px" }}>Login</Link>
-                <Link to="/register" style={{ color: "#fff" }}>Register</Link>
-            </nav>
-        </>
-    )
-}
+  return (
+    <nav className="bg-gray-900 text-white px-6 py-4 flex justify-between">
+      <h1 className="text-xl font-bold">ShopNow</h1>
+      <div className="space-x-4">
+        <Link to="/" className="hover:text-gray-300">Home</Link>
+        <Link to="/login" className="hover:text-gray-300">Login</Link>
+        <Link to="/register" className="hover:text-gray-300">Register</Link>
+      </div>
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;
